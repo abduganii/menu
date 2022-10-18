@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/home/home';
+import { Routes, Route } from "react-router-dom";
+import Categoreis from './pages/categoreis/categoreis';
+import AboutUs from './pages/aboutUs/aboutUs';
+import { useState } from 'react';
+import Language from './pages/language/language';
+
 
 function App() {
+
+  const [lang, setLang] = useState(JSON.parse(window.localStorage.getItem('lang')) || 'UZ')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+       <Routes>
+        <Route path="/" element={<Home  lang={lang}/>} />
+        <Route path="/categoreis" element={<Categoreis lang={lang} />} />
+        <Route path="/aboutUS" element={<AboutUs  lang={lang}/>} />
+        <Route path="/languages" element={<Language lang={lang} setLang={ setLang} />} />
+      </Routes>
+    
+    </>
+  )
 }
 
 export default App;

@@ -1,0 +1,22 @@
+.Header{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgb(0, 0, 0,0.2) ;
+    background-color: white;
+    
+}
+.Header .container{
+    max-width: 1215px;
+}
+.Header-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.Header-item{
+    padding: 15px;
+}

@@ -1,0 +1,30 @@
+.Categoreis-list{
+    width: 100%;
+    max-width: 744px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Categoreis-item{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(225, 223, 223, 0.2);
+    border-radius: 20px;
+    color: black;
+}
+.Categoreis-item:hover{
+    background-color: rgb(225, 223, 223);
+    
+}
+.Categoreis-title{
+    text-align: center;
+    margin-top: 20px;     
+    font-size: 30px;     
+
+}
+.Categoreis-item1{
+    background-color: #4d96fe;
+    color: white;
+}

@@ -1,0 +1,146 @@
+.About_top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+   max-width: 726px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.About{
+    margin-bottom: 100px;
+}
+.About_top-img{
+    width: 100%;
+    max-width: 352px;
+    margin-right: 20px;
+}
+
+.About_top-left{
+    width: 100%;
+    max-width: 270px;
+}
+
+.About_top-left p{
+ margin-bottom: 3px;
+}
+
+.workday{
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 13px;
+}
+
+.workday_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.workday_top-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.workday_top-item{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right:2px;
+}
+.radio{
+    display: none;
+}
+.workday_top-item:active{
+    background-color: #4d96fe;
+    color: white;
+    border: 1px solid #4d96fe;
+}
+
+.about{
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 13px;
+    margin-top: 15px;
+    
+}
+.about-wrpa{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+} 
+.about-plus{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.about-plus::before{
+    content: "";
+    width: 14px;
+    height: 2px;
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+
+}
+
+.plusadd{
+    height: 14px;
+    width: 2px;
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+}
+
+
+
+.insta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(48, 47, 47);
+    
+}
+.insta img {
+    width: 30px;
+}
+
+.about-title{
+    margin-bottom: 20px;
+}
+
+.tele{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nane{
+    display: none;
+}
+
+@media only screen and (max-width: 520px) {
+    .About_top-img{
+        width: 100%;
+        max-width: 200px;
+        margin-right: 20px;
+    }
+  }
